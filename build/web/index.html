@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CS425 Lab4 Employee Database</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="scripts/jquery-3.7.1.min.js"></script>
+    <script src="scripts/script.js"></script>
+</head>
+<body>
+<<form name="employeeform" id="employeeform">
+    <fieldset>
+        <legend>Add/Edit/Delete Employees</legend>
+        <label for="id">ID: </label>
+        <input type="number" name="id" id="id"><br><br>
+        <label for="name">Name: </label>
+        <input type="text" name="name" id="name">
+        <label for="salary">Salary: </label>
+        <input type="number" name="salary" id="salary">
+        <label for="age">Age: </label>
+        <input type="number" name="age" id="age"><br><br>
+
+        <input type="button" value="List" onclick="listEmployees()">
+        <input type="button" value="Create" onclick="createEmployee()">
+        <input type="button" value="Update" onclick="updateEmployee()">
+        <input type="button" value="Delete" onclick="deleteEmployee()">
+    </fieldset>
+</form>
+
+<div id="output"></div>
+</body>
+</html>
